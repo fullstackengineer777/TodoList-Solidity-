@@ -1,5 +1,5 @@
 # TodoList-Solidity-
-Solidity Remix Ganache Truffle
+Solidity Remix Ganache-GUI Truffle
 
 
 ### installing truffle <br>
@@ -10,7 +10,8 @@ truffle init
 
 ### create package.json file to install some dev dependencies <br>
 npm install touch-cli -g <br>
-touch package.json
+touch package.json <br>
+reference the content of the file "package.json"
 
 ### create TodoList.sol
 
@@ -43,3 +44,20 @@ truffle compile
  ### or 
  taskCount = TodoList.taskCount()
  taskCount.toNumber()
+
+ ### truffle migrate reset 
+ truffle migrate --reset <br>
+
+ todoList = await TodoList.deployed() <br>
+ task = await todoList.tasks(1)  <br>
+ task.content   <br>
+
+ ### develop frontend
+
+bs-config.json  <br> 
+src/index.html  <br>
+src/app.js      <br>
+
+### run the client
+npm run dev
+
